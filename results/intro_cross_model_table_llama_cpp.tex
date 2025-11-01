@@ -1,0 +1,19 @@
+\begin{table}[t!]
+    \footnotesize
+    \centering
+    \caption{Cross-model performance analysis for llama.cpp (variance: 87.80). Each cell shows runtime (seconds) when an LLM uses another LLM's optimal prompt. Lower values indicate better performance.}
+    \label{tab:intro_cross_model_llama_cpp}
+    \setlength{\tabcolsep}{3mm}
+    \begin{adjustbox}{width=0.9\columnwidth,center}
+    \begin{tabular}{lccc}
+    \toprule
+    \textbf{LLM} & \textbf{GPT's} & \textbf{Claude's} & \textbf{Gemini's} \\
+    & \textbf{prompt} & \textbf{prompt} & \textbf{prompt} \\
+    \hline
+    GPT-4o & 117.2 & 148.1 & 151.2 \\
+    Claude-3.7-Sonnet & 147.8 & 142.6 & 145.6 \\
+    Gemini-2.5-Pro & 144.3 & 143.6 & 141.2 \\
+    \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \end{table}

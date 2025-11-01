@@ -1,0 +1,19 @@
+\begin{table}[t!]
+    \footnotesize
+    \centering
+    \caption{Cross-model performance analysis for rpcs3 (variance: 515.00). Each cell shows runtime (seconds) when an LLM uses another LLM's optimal prompt. Lower values indicate better performance.}
+    \label{tab:intro_cross_model_rpcs3}
+    \setlength{\tabcolsep}{3mm}
+    \begin{adjustbox}{width=0.9\columnwidth,center}
+    \begin{tabular}{lccc}
+    \toprule
+    \textbf{LLM} & \textbf{GPT's} & \textbf{Claude's} & \textbf{Gemini's} \\
+    & \textbf{prompt} & \textbf{prompt} & \textbf{prompt} \\
+    \hline
+    GPT-4o & 172.0 & 175.8 & -- \\
+    Claude-3.7-Sonnet & 232.0 & 215.8 & 230.1 \\
+    Gemini-2.5-Pro & 228.1 & 225.0 & 218.1 \\
+    \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \end{table}

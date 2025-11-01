@@ -1,0 +1,23 @@
+\begin{table}[t!]
+    \footnotesize
+    \centering
+    \caption{The mean and standard deviation of \%PI, denoted as Mean (SD), for \model~and the basic prompting approach across three LLMs and five projects. For each case, \setlength{\fboxsep}{1.5pt}\colorbox{applegreen!30}{green cells} mean \model~has the best mean \%PI; or \setlength{\fboxsep}{1.5pt}\colorbox{red!20}{red cells} otherwise. The one(s) with the best rank ($r$) from the statistical tests is in bold.}
+    \label{tab:rq1_results}
+    \setlength{\tabcolsep}{0.6mm}
+    \begin{adjustbox}{width=\columnwidth,center}
+    \begin{tabular}{lllllllll}
+    \toprule
+    \multirow{2}{*}{\textbf{System}} & \multicolumn{2}{c}{\textbf{\model}} & \multicolumn{2}{c}{\textbf{CoT}} & \multicolumn{2}{c}{\textbf{Few-shot}} & \multicolumn{2}{c}{\textbf{Contextual}} \\ \cline{2-9}
+ & \textbf{$r$} & \textbf{Mean (SD)} & \textbf{$r$} & \textbf{Mean (SD)} & \textbf{$r$} & \textbf{Mean (SD)} & \textbf{$r$} & \textbf{Mean (SD)} \\ \hline
+    \textsc{BitmapPlusPlus} & \textbf{1} & \textbf{19.06} (1.48) & \textbf{1} & \textbf{19.01} (1.53) & \cellcolor{red!20}\textbf{1} & \cellcolor{red!20}\textbf{19.29} (2.37) & 2 & 18.49 (1.17) \\
+    \textsc{Llama.cpp} & \cellcolor{applegreen!30}\textbf{1} & \cellcolor{applegreen!30}\textbf{7.84} (10.52) & 3 & 3.95 (1.60) & 4 & 3.90 (2.00) & 2 & 3.97 (2.01) \\
+    \textsc{RPCS3} & \cellcolor{applegreen!30}\textbf{1} & \cellcolor{applegreen!30}\textbf{4.44} (8.54) & 2 & 2.39 (7.72) & 3 & 0.77 (5.19) & \textbf{1} & \textbf{3.52} (6.46) \\
+    \textsc{Faster‑Whisper} & \cellcolor{applegreen!30}\textbf{1} & \cellcolor{applegreen!30}\textbf{5.64} (3.58) & 4 & 1.58 (5.78) & 3 & 4.08 (2.91) & 2 & 4.14 (1.66) \\
+    \textsc{Langflow} & \cellcolor{applegreen!30}\textbf{1} & \cellcolor{applegreen!30}\textbf{9.01} (2.33) & 2 & 2.72 (2.26) & 4 & 1.63 (1.68) & 3 & 2.34 (2.61) \\
+    \hline
+        Average $r$ & \multicolumn{2}{l}{\textbf{1.00}} & \multicolumn{2}{l}{2.40} & \multicolumn{2}{l}{3.00} & \multicolumn{2}{l}{2.00}
+    \\
+    \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \end{table}

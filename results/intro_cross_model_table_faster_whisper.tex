@@ -1,0 +1,19 @@
+\begin{table}[t!]
+    \footnotesize
+    \centering
+    \caption{Cross-model performance analysis for faster-whisper (variance: 440.10). Each cell shows runtime (seconds) when an LLM uses another LLM's optimal prompt. Lower values indicate better performance.}
+    \label{tab:intro_cross_model_faster_whisper}
+    \setlength{\tabcolsep}{3mm}
+    \begin{adjustbox}{width=0.9\columnwidth,center}
+    \begin{tabular}{lccc}
+    \toprule
+    \textbf{LLM} & \textbf{GPT's} & \textbf{Claude's} & \textbf{Gemini's} \\
+    & \textbf{prompt} & \textbf{prompt} & \textbf{prompt} \\
+    \hline
+    GPT-4o & 454.9 & -- & 480.4 \\
+    Claude-3.7-Sonnet & 492.6 & 456.4 & 484.0 \\
+    Gemini-2.5-Pro & 525.0 & 477.4 & 468.8 \\
+    \bottomrule
+    \end{tabular}
+    \end{adjustbox}
+    \end{table}
